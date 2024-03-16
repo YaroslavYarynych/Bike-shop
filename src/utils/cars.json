@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Велосипед 29'",
+    "brand": "Cannondale",
+    "model": "Trail SL 4",
+    "image": "https://www.gorgany.com/catalog/product/cache/5f3efa0a8fec5fde77fda58c9d0d06d0/C/a/Cannondale_Trail_SL_4_2022_ELB_1_22_2680.jpg",
+    "price": 44800,
+    "year": 2022,
+    "condition": "new",
+    "category": "mountain",
+    "description": "powerful American muscle car known for its iconic design and high-performance capabilities. It is equipped with a robust V8 engine, delivering impressive horsepower and torque for exhilarating driving experiences."
+  },
+  {
+    "id": 2,
+    "title": "Велосипед 29'",
+    "brand": "Pride",
+    "model": "Revenge 9.2",
+    "image": "https://www.gorgany.com/catalog/product/cache/5f3efa0a8fec5fde77fda58c9d0d06d0/p/r/pride_29_revenge_9_2_2023_yellow_1_23_52c2.jpg",
+    "price": 48600,
+    "year": 2023,
+    "condition": "new",
+    "category": "mountain",
+    "description": "The Porsche 911 is a timeless sports car icon known for its distinctive design, exceptional performance, and legendary heritage. With its rear-engine layout, precise handling, and powerful flat-six engines, the 911 delivers an exhilarating driving experience that has captivated enthusiasts for generations."
+  },
+  {
+    "id": 3,
+    "title": "Велосипед 29'",
+    "brand": "Cannondale",
+    "model": "Trail SE 3",
+    "image": "https://www.gorgany.com/catalog/product/cache/5f3efa0a8fec5fde77fda58c9d0d06d0/C/a/Cannondale_Trail__SE_3_21_d929.jpg",
+    "price": 55160,
+    "year": 2021,
+    "condition": "new",
+    "category": "mountain",
+    "description": "The Porsche Panamera is a luxury performance sedan that combines sports car dynamics with four-door practicality. With its luxurious interior, powerful engine options, and advanced technology features, the Panamera offers a refined driving experience and impressive versatility for everyday use."
+  },
+  {
+    "id": 4,
+    "title": "Велосипед 26'",
+    "brand": "Pride",
+    "model": "Stella 6.1 Microshift",
+    "image": "https://www.gorgany.com/catalog/product/cache/5f3efa0a8fec5fde77fda58c9d0d06d0/2/6/26_Pride_STELLA_6_1_2023_MICROSHIFT_bordeaux_1_23_64eb.jpg",
+    "price": 13560,
+    "year": 2022,
+    "condition": "new",
+    "category": "city",
+    "description": "The Porsche 911 GT3 RS is a track-focused variant of the iconic Porsche 911 sports car. With its lightweight construction, race-derived suspension, and high-revving naturally aspirated engine, the GT3 RS delivers unmatched performance and agility, making it a favorite among driving enthusiasts."
+  },
+  {
+    "id": 5,
+    "title": "Велосипед",
+    "brand": "Kona",
+    "model": "Hei Hei",
+    "image": "https://www.gorgany.com/catalog/product/cache/5f3efa0a8fec5fde77fda58c9d0d06d0/k/o/kona_hei_hei_CR_DL_2021_gloss_metallic_alpine_blue_XL_1_22_5dd7.jpg",
+    "price": 174057,
+    "year": 2021,
+    "condition": "new",
+    "category": "mountain",
+    "description": "The Nissan GT-R, also known as the `Godzilla,` is a legendary sports car celebrated for its blistering performance and impressive handling. Powered by a twin-turbocharged V6 engine and equipped with advanced all-wheel-drive technology, the GT-R offers supercar-level performance at a more accessible price point."
+  },
+  {
+    "id": 6,
+    "title": "Велосипед 28`",
+    "brand": "GT",
+    "model": "Grade Elite",
+    "image": "https://www.gorgany.com/catalog/product/cache/5f3efa0a8fec5fde77fda58c9d0d06d0/G/T/GT_28_grade_elite_BUR_48sm_1_22_69e8.jpg",
+    "price": 35700,
+    "year": 2020,
+    "condition": "pre-owned",
+    "category": "gravel",
+    "description": "The Audi R8 is a high-performance supercar known for its cutting-edge technology and exhilarating performance. With its distinctive design, advanced Quattro all-wheel-drive system, and powerful V10 engine, the R8 delivers exceptional handling and acceleration, making it a thrilling choice for driving enthusiasts."
+  },
+  {
+    "id": 7,
+    "title": "Велосипед 16'",
+    "brand": "Pride",
+    "model": "Mini 3",
+    "image": "https://www.gorgany.com/catalog/product/cache/5f3efa0a8fec5fde77fda58c9d0d06d0/p/r/pride_20_mini_3_2023_black_1_23_c55f.jpg",
+    "price": 18760,
+    "year": 2023,
+    "condition": "new",
+    "category": "children",
+    "description": "The BMW X6 is a luxury crossover SUV that combines sporty styling with SUV practicality. It offers a spacious and luxurious interior, advanced technology features, and a range of powerful engine options. The X6 is known for its commanding presence on the road and dynamic driving dynamics."
+  },
+  {
+    "id": 8,
+    "title": "Велосипед 16'",
+    "brand": "Cannondale",
+    "model": "Trail SS",
+    "image": "https://www.gorgany.com/catalog/product/cache/5f3efa0a8fec5fde77fda58c9d0d06d0/C/a/Cannondale_Trail_SS_Girls_2021_FLM_16_1_22_8def.jpg",
+    "price": 8000,
+    "year": 2017,
+    "condition": "Previously driven",
+    "category": "children",
+    "description": "The Jaguar F-Type is a luxury sports car that embodies elegance and performance. With its striking design, refined interior, and potent engines, including supercharged V6 and V8 options, the F-Type delivers exhilarating performance and an engaging driving experience."
+  },
+  {
+    "id": 9,
+    "title": "Велосипед",
+    "brand": "Kona",
+    "model": "Shonky",
+    "image": "https://www.gorgany.com/catalog/product/cache/5f3efa0a8fec5fde77fda58c9d0d06d0/K/o/Kona_shonky_2023_bloodstone_red_1_23_6d29.jpg",
+    "price": 69631,
+    "year": 2021,
+    "condition": "new",
+    "category": "mountain",
+    "description": "The Mustang Shelby GT350 is a high-performance variant of the classic Ford Mustang. Engineered by Shelby American, it features a powerful V8 engine, track-focused suspension, and aerodynamic enhancements, making it a formidable presence on both the road and the track."
+  },
+  {
+    "id": 10,
+    "title": "Велосипед",
+    "brand": "Kona",
+    "model": "Sutra 3S",
+    "image": "https://www.gorgany.com/catalog/product/cache/5f3efa0a8fec5fde77fda58c9d0d06d0/k/o/kona_sutra_2024_midnight_1_24_e65a.jpg",
+    "price": 77766,
+    "year": 2020,
+    "condition": "Previously driven",
+    "category": "gravel",
+    "description": "iconic American sports car known for its sleek design, powerful performance, and excellent handling. It offers a thrilling driving experience and is often praised for its value compared to other high-performance sports cars."
+  }
+]

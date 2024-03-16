@@ -1,0 +1,37 @@
+@import "../../utils/ui-kit/mixins.module.scss";
+@import "../../utils/ui-kit/colors.module.scss";
+
+.home {
+  &_input__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: fit-content;
+  }
+}
+
+#home_input__search {
+  display: block;
+  outline: 0;
+  border: 2px solid #11998e7c;
+  width: 180px;
+  height: 50%;
+  border-radius: 15px;
+  font-size: 12px;
+  padding: 12px;
+  background-color: $default-white-color;
+  @include onTablet() {
+    width: 400px;
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  &:focus {
+    border: 2px solid $primary-green;
+  }
+
+  &:focus::placeholder {
+    color: $default-black-color;
+  }
+}

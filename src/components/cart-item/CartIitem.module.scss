@@ -1,0 +1,127 @@
+@import "../../utils/ui-kit/mixins.module.scss";
+@import "../../utils/ui-kit/colors.module.scss";
+
+.cart {
+  &__item {
+    flex-direction: column;
+    gap: 50px;
+    @include toCenter;
+
+    @include onTablet {
+      flex-direction: row;
+    }
+
+    @include onDesktop {
+      gap: 50px;
+    }
+
+    &_wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      @include onTablet {
+        flex-direction: row;
+        gap: 150px;
+      }
+    }
+
+    &_container {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-around;
+      gap: 20px;
+      padding: 10px;
+      background-color: $default-white-color;
+
+      @include onTablet {
+        flex-direction: row;
+      }
+
+      @include onDesktop {
+        gap: 100px;
+      }
+    }
+
+    &__title {
+      width: 100%;
+      text-align: center;
+      min-width: 150px;
+      max-width: 150px;
+
+      @include onTablet {
+        min-width: 200px;
+        max-width: 200px;
+      }
+
+      @include onDesktop {
+        min-width: 250px;
+        max-width: 250px;
+      }
+    }
+    &__price {
+      min-width: fit-content;
+    }
+
+    &__image {
+      width: 100%;
+      display: flex;
+      object-fit: cover;
+      border-radius: 10px;
+      max-width: 130px;
+      max-height: 100px;
+      cursor: pointer;
+    }
+
+    &_quantity_container {
+      display: flex;
+      gap: 20px;
+
+      @include onDesktop {
+        gap: 50px;
+      }
+    }
+
+    &_quantity_controls {
+      gap: 5px;
+      @include toCenter;
+    }
+    &_quantity_btn {
+      width: 28px;
+      height: 28px;
+      color: #11998e72;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        color: $primary-green;
+      }
+
+      &__active {
+        pointer-events: none;
+        color: $default-gray-color;
+      }
+    }
+
+    &_quantity_counter {
+      text-align: center;
+      min-width: 30px;
+    }
+    &_icon {
+      display: flex;
+      place-self: end;
+      width: 35px;
+      height: 35px;
+      color: rgba(128, 128, 128, 0.3);
+      transition: all 0.3s;
+      &:hover {
+        color: $primary-green;
+      }
+      @include onTablet {
+        place-self: center;
+      }
+    }
+  }
+}

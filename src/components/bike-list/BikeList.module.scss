@@ -1,0 +1,20 @@
+@import "../../utils/ui-kit/mixins.module.scss";
+
+.bike__list_container {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  width: 100%;
+  margin: 20px auto;
+  row-gap: 20px;
+
+  @include onBigMobile {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  @include onTablet {
+    grid-template-columns: repeat(3, 33.3%);
+  }
+  @include onDesktop {
+    grid-template-columns: repeat(4, 25%);
+  }
+}

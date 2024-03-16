@@ -1,0 +1,67 @@
+@import "../../utils/ui-kit/mixins.module.scss";
+@import "../../utils/ui-kit/colors.module.scss";
+
+.home {
+  &__container {
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    margin: 25px auto;
+  }
+  &__sort_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 25px;
+
+    @include onTablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__sort_zone {
+    @include toCenter;
+    @include onTablet {
+      gap: 10px;
+    }
+  }
+}
+
+.arrow {
+  &_container {
+    display: flex;
+    position: relative;
+    width: 60px;
+    height: 60px;
+  }
+
+  &_up,
+  &_down {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    color: rgba(20, 20, 20, 0.2);
+    transition: all 0.3s;
+    top: 15px;
+    &:hover {
+      color: rgba(20, 20, 20, 0.5);
+    }
+    &__active {
+      color: #11998ea9;
+      &:hover {
+        color: $primary-green;
+      }
+    }
+  }
+
+  &_up {
+    left: 5px;
+  }
+  &_down {
+    right: 5px;
+  }
+}

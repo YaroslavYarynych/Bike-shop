@@ -1,0 +1,88 @@
+@import "./colors.module.scss";
+
+@mixin toCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button {
+  display: inline-block;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: $text-btn-color;
+  padding: 10px;
+
+  background: linear-gradient(to right, $primary-green, $secondary-green);
+  cursor: pointer;
+  transition: all 0.4s;
+
+  @media (min-width: 650px) {
+    font-size: 22px;
+    padding: 12px;
+  }
+
+  &:hover {
+    color: $text-btn-hover-color;
+  }
+}
+
+@mixin onBigMobile {
+  @media (min-width: 520px) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (min-width: 767px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin form-input-styles {
+  font-family: inherit;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid $default-gray-color;
+  font-size: 1.3rem;
+  background: transparent;
+  color: $default-white-color;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+@mixin form-input-focus {
+  border-bottom: 2px solid $primary-green;
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $primary-green, $secondary-green);
+  border-image-slice: 1;
+}
+
+@mixin form-label-focus {
+  position: absolute;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $primary-green;
+  font-weight: 700;
+}
+
+@mixin form-label {
+  pointer-events: none;
+  position: absolute;
+  display: block;
+  transition: 0.2s;
+  font-size: 1em;
+  color: $default-gray-color;
+}
