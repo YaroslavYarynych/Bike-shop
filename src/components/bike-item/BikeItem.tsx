@@ -12,7 +12,7 @@ import { useAppSelector } from "../../store/store";
 import {
   addToFavourites,
   deleteFromFavourites,
-} from "../../features/bikeSlice";
+} from "../../features/favouritesSlice";
 import { addToCart, deleteFromCart } from "../../features/cartSlice";
 
 import styles from "./BikeItem.module.scss";
