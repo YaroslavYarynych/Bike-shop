@@ -11,16 +11,23 @@ export const bikeSlice = createSlice({
   reducers: {
     addToFavourites(state, action) {
       state.favourites.push(action.payload);
+      localStorage.setItem("favs", JSON.stringify(state.favourites));
     },
 
     deleteFromFavourites(state, action) {
       state.favourites = state.favourites.filter(
         (item) => item.id !== action.payload
       );
+      localStorage.setItem("favs", JSON.stringify(state.favourites));
+    },
+
+    addFavsFromStorage(state, action) {
+      state.favourites = [...action.payload];
     },
   },
 });
 
-export const { addToFavourites, deleteFromFavourites } = bikeSlice.actions;
+export const { addToFavourites, deleteFromFavourites, addFavsFromStorage } =
+  bikeSlice.actions;
 
 export default bikeSlice.reducer;

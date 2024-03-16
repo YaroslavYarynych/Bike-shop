@@ -6,9 +6,12 @@ import "./favouritess.scss";
 
 export const Favourites = () => {
   const bikesFromFavs = useAppSelector((state) => state.favStore.favourites);
+  const localeFavs = localStorage.getItem("favs");
+  const storedFavsItems = localeFavs ? JSON.parse(localeFavs) : [];
+
   return (
     <div className="favourites-container">
-      {!bikesFromFavs.length ? (
+      {!bikesFromFavs.length && !storedFavsItems.length ? (
         <EmptyMessage
           title="Your Bikery favourites is empty"
           content="Choose a bike"

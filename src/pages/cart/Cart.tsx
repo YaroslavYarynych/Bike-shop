@@ -12,6 +12,9 @@ export const Cart = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
   const bikesFromCart = useAppSelector((state) => state.cartStore.cart);
+  const localeCart = localStorage.getItem("cart");
+
+  const storedCartItems = localeCart ? JSON.parse(localeCart) : [];
 
   const handleSubmit = () => {
     dispatch(setIsComfirmOrder());
@@ -25,7 +28,7 @@ export const Cart = () => {
 
   return (
     <div className="cart-container">
-      {!bikesFromCart.length ? (
+      {!bikesFromCart.length && !storedCartItems.length ? (
         <EmptyMessage
           title="Your Bikery Cart is empty"
           content="Choose a bike"
