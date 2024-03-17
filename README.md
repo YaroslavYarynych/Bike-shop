@@ -16,7 +16,8 @@ The bicycle store application built with React.js offers a comprehensive platfor
 
 ## Build With
 
-- React (RTK)
+- React
+- RTK
 - TypeScript
 - Framer motion
 - React toastify
