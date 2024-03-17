@@ -1,4 +1,4 @@
-# Bike store
+# ![browser](https://github.com/YaroslavYarynych/Bike-shop/assets/63805271/749e5a9c-787c-47bb-a7d1-5d83cf9da9a2) Bikery
 
 The bicycle store application built with React.js offers a comprehensive platform for users to explore and shop for bicycles. It features a search bar and sorting options allowing customers to easily find bikes based on various criteria such as price, brand, and year. Users can conveniently add products to their cart for purchase and manage their favorites list for future reference. The application incorporates animations and other libraries to enhance the user interface and provide an engaging shopping experience. Overall, the bicycle store offers a seamless browsing and purchasing experience tailored to cycling enthusiasts.
 
