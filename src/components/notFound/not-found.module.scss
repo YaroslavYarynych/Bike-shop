@@ -1,0 +1,26 @@
+@import "../../styles/colors.module.scss";
+@import "../../styles/mixins.module.scss";
+
+.not_found {
+  margin-top: 50px;
+  flex-direction: column;
+  gap: 50px;
+
+  @include toCenter;
+  &__title {
+    color: $primary-green;
+    font-size: 20px;
+
+    @include onTablet {
+      font-size: 30px;
+    }
+  }
+
+  &__btn {
+    padding: 15px 40px;
+    color: $default-white-color;
+    background-color: $primary-green;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+}

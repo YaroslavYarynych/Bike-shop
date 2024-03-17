@@ -18,10 +18,9 @@ import { useNavigate } from "react-router-dom";
 
 type Props = {
   bike: Cart;
-  index: number;
 };
 
-export const CartItem: React.FC<Props> = ({ bike, index }) => {
+export const CartItem: React.FC<Props> = ({ bike }) => {
   const cart = useAppSelector((state) => state.cartStore.cart);
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
@@ -55,7 +54,7 @@ export const CartItem: React.FC<Props> = ({ bike, index }) => {
         opacity: 1,
         y: 0,
         transition: {
-          duration: 0.5,
+          duration: 0.3,
         },
       }}
       viewport={{ once: true }}

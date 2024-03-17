@@ -26,7 +26,7 @@ export const CartList: React.FC<Props> = ({ list, handleSubmit }) => {
       </div>
 
       {list.map((bike, index) => (
-        <CartItem bike={bike} index={index} key={index} />
+        <CartItem bike={bike} key={index} />
       ))}
 
       {list.length && (

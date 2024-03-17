@@ -6,7 +6,7 @@ import { setIsComfirmOrder } from "../../features/bikeSlice";
 import { resetCart } from "../../features/cartSlice";
 import { useAppDispatch, useAppSelector } from "../../store/store";
 
-import "./cart.scss";
+import styles from "./cart.module.scss";
 
 export const Cart = () => {
   const dispatch = useAppDispatch();
@@ -27,7 +27,7 @@ export const Cart = () => {
   };
 
   return (
-    <div className="cart-container">
+    <div className={styles.cart_container}>
       {!bikesFromCart.length && !storedCartItems.length ? (
         <EmptyMessage
           title="Your Bikery Cart is empty"

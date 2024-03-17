@@ -1,12 +1,13 @@
+@import "../../styles/mixins.module.scss";
+
 .favourites {
-  &-container {
+  &_container {
     width: 100%;
     height: 100%;
     max-width: 1200px;
     margin: 50px auto;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+    @include toCenter;
   }
 }

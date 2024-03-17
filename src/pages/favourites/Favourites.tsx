@@ -2,7 +2,7 @@ import { BikeList } from "../../components/bike-list/BikeList";
 import { useAppSelector } from "../../store/store";
 import { EmptyMessage } from "../../components/empty-message/EmptyMessage";
 
-import "./favouritess.scss";
+import styles from "./favourites.module.scss";
 
 export const Favourites = () => {
   const bikesFromFavs = useAppSelector((state) => state.favStore.favourites);
@@ -10,7 +10,7 @@ export const Favourites = () => {
   const storedFavsItems = localeFavs ? JSON.parse(localeFavs) : [];
 
   return (
-    <div className="favourites-container">
+    <div className={styles.favourites_container}>
       {!bikesFromFavs.length && !storedFavsItems.length ? (
         <EmptyMessage
           title="Your Bikery favourites is empty"
