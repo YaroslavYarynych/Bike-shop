@@ -6,28 +6,6 @@
   align-items: center;
 }
 
-@mixin button {
-  display: inline-block;
-  border-radius: 15px;
-  font-size: 16px;
-  font-weight: 600;
-  color: $text-btn-color;
-  padding: 10px;
-
-  background: linear-gradient(to right, $primary-green, $secondary-green);
-  cursor: pointer;
-  transition: all 0.4s;
-
-  @media (min-width: 650px) {
-    font-size: 22px;
-    padding: 12px;
-  }
-
-  &:hover {
-    color: $text-btn-hover-color;
-  }
-}
-
 @mixin onBigMobile {
   @media (min-width: 520px) {
     @content;

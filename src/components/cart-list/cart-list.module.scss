@@ -1,5 +1,5 @@
-@import "../../utils/ui-kit/colors.module.scss";
-@import "../../utils/ui-kit/mixins.module.scss";
+@import "../../styles/mixins.module.scss";
+@import "../../styles/colors.module.scss";
 
 .cart {
   &__top_container {
@@ -38,7 +38,7 @@
     cursor: pointer;
     border-radius: 12px;
     color: $default-white-color;
-    background-color: #11998eac;
+    background-color: rgba(17, 153, 142, 0.675);
     transition: all 0.3s;
 
     &:hover {

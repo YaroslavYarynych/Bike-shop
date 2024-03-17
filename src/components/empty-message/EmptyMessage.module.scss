@@ -1,28 +1,31 @@
+@import "../../styles/mixins.module.scss";
+@import "../../styles//colors.module.scss";
+
 .empty_message {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
   width: 100%;
+  gap: 80px;
+  flex-direction: column;
+  @include toCenter;
 
   &__title {
-    display: flex;
-    color: #11998e;
+    color: $primary-green;
     flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     gap: 6px;
+    @include toCenter;
+
+    @include onTablet {
+      font-size: 30px;
+    }
   }
 
   &__add_btn {
     cursor: pointer;
     width: fit-content;
     padding: 15px;
-    background-color: #11998e;
-    color: #fff;
+    background-color: $primary-green;
+    color: $default-white-color;
     font-size: 16px;
     border-radius: 12px;
     place-self: center;

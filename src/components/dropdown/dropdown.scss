@@ -1,3 +1,6 @@
+@import "../../styles/mixins.module.scss";
+@import "../../styles/colors.module.scss";
+
 .dropdown {
   position: relative;
   width: 100%;
@@ -7,8 +10,8 @@
   align-items: center;
 
   &__btn-container {
-    background-color: #11998e;
-    color: #fff;
+    background-color: $primary-green;
+    color: $default-white-color;
     width: 100%;
     min-width: 120px;
     max-width: 150px;
@@ -41,7 +44,7 @@
     position: absolute;
     top: 50px;
     left: 0;
-    color: #000;
+    color: $default-black-color;
     border-radius: 8px;
     box-shadow: 0px 4px 16px -2px #00000029;
     z-index: 100;
@@ -66,14 +69,14 @@
     text-align: left;
     padding: 12px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: $default-white-color;
     transition: all 0.3s;
     @media (min-width: 767px) {
       font-size: 16px;
     }
 
     &:hover {
-      background-color: #cbfdf9;
+      background-color: $hover-color;
     }
   }
 
@@ -81,12 +84,9 @@
     transform: rotate(90deg);
   }
 }
-// .is-active {
-//   display: block;
-// }
 
 .dropdown__item--disabled {
   pointer-events: none;
-  color: #000;
-  background-color: #a5ece6;
+  color: $default-black-color;
+  background-color: $dropdown-disabled;
 }
