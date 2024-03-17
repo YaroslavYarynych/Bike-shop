@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ChangeEvent } from "react";
 import classNames from "classnames";
 import { ToastContainer, toast } from "react-toastify";
+import { motion } from "framer-motion";
 
 import { useAppDispatch, useAppSelector } from "../../store/store";
 import { changeOrder, setProducts } from "../../features/bikeSlice";
@@ -39,10 +40,13 @@ export const Home: React.FC = () => {
     }, 2000);
 
     if (isBought) {
-      toast.success("You succesfully buy our products, thank you!", {
-        position: "bottom-right",
-        className: "toast-message",
-      });
+      toast.success(
+        "Your purchase was successful. Thank you for choosing us!",
+        {
+          position: "bottom-right",
+          className: "toast-message",
+        }
+      );
     }
   }, []);
 
@@ -73,10 +77,15 @@ export const Home: React.FC = () => {
       }
     });
 
+  const searchMessage =
+    "Oops! It seems we don`t have any products that match your search criteria".split(
+      " "
+    );
+
   return (
     <div className={styles.home}>
       <div className={styles.home__container}>
-        {!filtered.length ? (
+        {!products.length ? (
           <Loader />
         ) : (
           <>
@@ -103,6 +112,25 @@ export const Home: React.FC = () => {
             <BikeList list={filtered} />
             <ToastContainer />
           </>
+        )}
+
+        {!filtered.length && products.length > 0 && (
+          <motion.div className={styles.home__message_container}>
+            {searchMessage.map((word, i) => (
+              <motion.span
+                className={styles.home__message}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{
+                  duration: 0.2,
+                  delay: i / 15,
+                }}
+                key={i}
+              >
+                {word}
+              </motion.span>
+            ))}
+          </motion.div>
         )}
       </div>
     </div>

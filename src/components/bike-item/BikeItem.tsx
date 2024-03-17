@@ -67,7 +67,7 @@ export const BikeItem: React.FC<Props> = ({ item, index }) => {
         opacity: 1,
         x: 0,
         transition: {
-          duration: 1,
+          duration: 0.7,
         },
       }}
       viewport={{ once: true }}

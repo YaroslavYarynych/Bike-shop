@@ -24,7 +24,7 @@ export const EmptyMessage: React.FC<Props> = ({ title, content }) => {
             animate={{ opacity: 1 }}
             transition={{
               duration: 0.5,
-              delay: i / 5,
+              delay: i / 10,
             }}
             key={i}
           >

@@ -1,0 +1,131 @@
+.cart__item {
+  flex-direction: column;
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 767px) {
+  .cart__item {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .cart__item {
+    gap: 50px;
+  }
+}
+.cart__item_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 767px) {
+  .cart__item_wrapper {
+    flex-direction: row;
+    gap: 150px;
+  }
+}
+.cart__item_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 10px;
+  background-color: #fff;
+}
+@media (min-width: 767px) {
+  .cart__item_container {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .cart__item_container {
+    gap: 100px;
+  }
+}
+.cart__item__title {
+  width: 100%;
+  text-align: center;
+  min-width: 150px;
+  max-width: 150px;
+}
+@media (min-width: 767px) {
+  .cart__item__title {
+    min-width: 200px;
+    max-width: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  .cart__item__title {
+    min-width: 250px;
+    max-width: 250px;
+  }
+}
+.cart__item__price {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.cart__item__image {
+  width: 100%;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  max-width: 130px;
+  max-height: 100px;
+  cursor: pointer;
+}
+.cart__item_quantity_container {
+  display: flex;
+  gap: 20px;
+}
+@media (min-width: 1024px) {
+  .cart__item_quantity_container {
+    gap: 50px;
+  }
+}
+.cart__item_quantity_controls {
+  gap: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart__item_quantity_btn {
+  width: 28px;
+  height: 28px;
+  color: rgba(17, 153, 142, 0.4470588235);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cart__item_quantity_btn:hover {
+  color: #11998e;
+}
+.cart__item_quantity_btn__active {
+  pointer-events: none;
+  color: #9b9b9b;
+}
+.cart__item_quantity_counter {
+  text-align: center;
+  min-width: 30px;
+}
+.cart__item_icon {
+  display: flex;
+  place-self: end;
+  width: 35px;
+  height: 35px;
+  color: rgba(128, 128, 128, 0.3);
+  transition: all 0.3s;
+}
+.cart__item_icon:hover {
+  color: #11998e;
+}
+@media (min-width: 767px) {
+  .cart__item_icon {
+    place-self: center;
+  }
+}/*# sourceMappingURL=CartIitem.module.css.map */

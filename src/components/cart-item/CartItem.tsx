@@ -49,13 +49,13 @@ export const CartItem: React.FC<Props> = ({ bike, index }) => {
       className={styles.cart__item_container}
       initial={{
         opacity: 0,
-        y: index % 2 === 0 ? 50 : -50,
+        y: 0,
       }}
       whileInView={{
         opacity: 1,
         y: 0,
         transition: {
-          duration: 1,
+          duration: 0.5,
         },
       }}
       viewport={{ once: true }}

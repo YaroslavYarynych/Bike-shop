@@ -27,6 +27,21 @@
       gap: 10px;
     }
   }
+
+  &__message {
+    &_container {
+      @include toCenter;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px;
+    }
+    text-align: center;
+    font-size: 20px;
+    color: $primary-green;
+    @include onTablet {
+      font-size: 30px;
+    }
+  }
 }
 
 .arrow {
